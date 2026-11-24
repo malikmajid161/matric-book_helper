@@ -1,5 +1,6 @@
 import json
 import re
+import asyncio
 from google import genai
 from google.genai import types
 from rag.language import detect_language
@@ -46,7 +47,7 @@ language. Do not translate equations, change values, or translate a quote while 
 
 class Generator:
     def __init__(self, key, model):
-        self.client = genai.Client(api_key=key, http_options=types.HttpOptions(timeout=25000)) if key else None
+        self.client = genai.Client(api_key=key, http_options=types.HttpOptions(timeout=18000)) if key else None
         self.model = model
 
     async def answer(self, query, sources, mode='answer', images=None):
@@ -60,10 +61,17 @@ class Generator:
         for page in images or []:
             contents.extend([f"Original textbook PDF page {page['page']}, source citations {page['citations']}:",
                              types.Part.from_bytes(data=page['data'], mime_type='image/png')])
-        response = await self.client.aio.models.generate_content(model=self.model,
-            contents=contents,
-            config=types.GenerateContentConfig(system_instruction=SYSTEM, temperature=0,
-                                                max_output_tokens=1800, response_mime_type='application/json'))
+        for attempt in range(2):
+            try:
+                response = await self.client.aio.models.generate_content(model=self.model,
+                    contents=contents,
+                    config=types.GenerateContentConfig(system_instruction=SYSTEM, temperature=0,
+                                                        max_output_tokens=1800, response_mime_type='application/json'))
+                break
+            except Exception as error:
+                if attempt or getattr(error, 'code', None) not in (500, 502, 503, 504):
+                    raise
+                await asyncio.sleep(1)
         result = json.loads(response.text or '{}')
         answer, cited = result.get('answer'), result.get('citations')
         if not isinstance(answer, str) or not isinstance(cited, list):

@@ -121,6 +121,7 @@ def chapter_pack(book, chapter_number, data_dir):
         'id': identifier, 'title': book.get('title', identifier), 'edition': book.get('edition', ''),
         'chapter_number': chapter_number, 'chapter_title': chapter['title'],
         'version': study_fingerprint, 'sha256': digest(pdf_path), 'md5': digest(pdf_path, 'md5'),
+        'source_book_version': book.get('version'),
         'bytes': pdf_path.stat().st_size, 'original_pdf_sha256': expected_sha,
         'pdf_page_offset': start - 1, 'chapters': [chapter],
         'offline_index': build_index([chapter]) if indexed else None,

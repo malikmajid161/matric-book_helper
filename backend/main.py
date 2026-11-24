@@ -210,6 +210,9 @@ async def ask(body: Ask, request: Request):
             return attach_source_pages(result, book)
         except RuntimeError as error:
             raise HTTPException(503, str(error)) from None
-        except Exception:
-            log.warning('AI generation or citation validation failed')
+        except Exception as error:
+            code = getattr(error, 'code', None)
+            if code in (429, 500, 502, 503, 504):
+                raise HTTPException(503, 'The online tutor is temporarily busy. Saved books and solutions still work. Please retry shortly.', headers={'Retry-After': '15'}) from None
+            log.warning('AI generation or citation validation failed (%s)', type(error).__name__)
             raise HTTPException(502, 'AI could not produce a verified response. Please retry.') from None

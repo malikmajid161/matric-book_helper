@@ -290,8 +290,8 @@
     "filename": "physics9.pdf",
     "source_url": "https://drive.google.com/file/d/1Afzgg1sukw1-qBOj61VnMGs6-b1x82ae/view",
     "sha256": "a77c9b5fd12e35de2a08390c2b93d10a59fa94fb4603e3349908e75c6b189794",
-    "reader_only": true,
-    "coverage": "Original PDF verified; OCR and exercises awaiting review",
+    "reader_only": false,
+    "coverage": "Machine OCR for search only; online answers inspect original PDF images; full manual verification and solutions pending",
     "chapters": [
       {
         "number": 1,
@@ -347,7 +347,9 @@
         "start_page": 181,
         "end_page": 193
       }
-    ]
+    ],
+    "text_origin": "machine_transcribed",
+    "ocr_sha256": "348ea2240cda3641dc7dd121d04ec4351953cc61226d30d2ab3d9c9c48663802"
   },
   {
     "id": "chemistry9",
@@ -357,8 +359,8 @@
     "filename": "chemistry9.pdf",
     "source_url": "https://drive.google.com/file/d/1OY1Unpm8VkLCGQfbLFrE8wLn3fzXmZpc/view",
     "sha256": "05e0fcca2e1762cc8d9122546d4ff4a612f18f8f061db1a5c04f17d99315b518",
-    "reader_only": true,
-    "coverage": "Original PDF verified; OCR and exercises awaiting review",
+    "reader_only": false,
+    "coverage": "Machine OCR for search only; online answers inspect original PDF images; full manual verification and solutions pending",
     "chapters": [
       {
         "number": 1,
@@ -438,6 +440,8 @@
         "start_page": 170,
         "end_page": 180
       }
-    ]
+    ],
+    "text_origin": "machine_transcribed",
+    "ocr_sha256": "625b3effba97c5971bfd59b5e2dd02a3fab101656078ef04daef11107641fe6b"
   }
 ]
