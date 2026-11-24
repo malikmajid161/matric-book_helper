@@ -105,6 +105,12 @@ def books():
             {'chapters': [{key: value for key, value in chapter.items() if key != 'pages'} for chapter in row['chapters']]} for row in catalog]
 
 
+@app.get('/books/{book}/coverage', dependencies=[Depends(authorize)])
+def coverage(book: str):
+    from rag.coverage import book_coverage
+    return book_coverage(ready_book(book, allow_reader=True))
+
+
 @app.get('/books/{book}/download', dependencies=[Depends(authorize)])
 def download(book: str):
     item = ready_book(book, allow_reader=True)
@@ -120,7 +126,7 @@ def bundle(book: str):
     if 'offline_index' not in item:
         from rag.offline_vectors import build_index
         item['offline_index'] = build_index(item['chapters'])
-    return {key: item[key] for key in ('id', 'title', 'edition', 'version', 'sha256', 'md5', 'chapters', 'offline_index')}
+    return {key: item[key] for key in ('id', 'title', 'edition', 'version', 'sha256', 'md5', 'chapters', 'offline_index')} | {'text_origin': item.get('text_origin', 'native'), 'coverage_note': item.get('coverage_note', item.get('coverage', ''))}
 
 
 @app.get('/chapters/{book}', dependencies=[Depends(authorize)])
@@ -177,7 +183,8 @@ async def ask(body: Ask, request: Request):
     if not body.question.strip():
         raise HTTPException(422, 'Question cannot be blank')
     from rag.exercises import resolve_exercise
-    resolved = resolve_exercise(body.question, book, body.chapter)
+    from rag.saved_solutions import saved_solution
+    resolved = saved_solution(body.question, book, body.chapter) or resolve_exercise(body.question, book, body.chapter)
     if resolved is not None and body.mode == 'answer':
         from rag.source_pages import attach_source_pages
         return attach_source_pages(resolved, book)

@@ -4,7 +4,7 @@ import type {OfflineIndex} from './vectorMath';
 import {installIndex,removeIndex} from './vectorDb';
 
 export type Chapter = {number:number;title:string;start_page:number;end_page:number;topics:{id:string;title:string;page_number:number;key_points?:string[]}[];exercises:{id:string;text:string;page_number:number}[];pages:{page_number:number;text:string}[]};
-export type Bundle = {id:string;title:string;edition:string;version:string;sha256:string;md5:string;chapters:Chapter[];offline_index?:OfflineIndex|null;chapter_number?:number;pdf_page_offset?:number;original_pdf_sha256?:string;source_book_version?:string;bytes?:number};
+export type Bundle = {id:string;title:string;edition:string;version:string;sha256:string;md5:string;chapters:Chapter[];offline_index?:OfflineIndex|null;chapter_number?:number;pdf_page_offset?:number;original_pdf_sha256?:string;source_book_version?:string;bytes?:number;text_origin?:string;coverage_note?:string};
 export type Download = {bundle:Bundle;pdfPath:string;bundlePath:string};
 const root = `${FS.documentDirectory}books/`;
 function validId(id:string) {if (!['physics','chemistry','mathematics','physics9','chemistry9'].includes(id)) throw new Error('Invalid book');}

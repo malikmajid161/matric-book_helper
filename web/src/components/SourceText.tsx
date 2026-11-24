@@ -1,6 +1,6 @@
 /** Highlight the retrieved passage inside its original stored page, never generated prose. */
 export function SourceText({text,excerpt}:{text:string;excerpt:string}){
-  const words=excerpt.trim().split(/\s+/).slice(0,18);
+  const words=excerpt.trim().split(/\s+/).slice(0,220);
   const expression=words.length?new RegExp(words.map(word=>word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('\\s+'),'i'):null;
   const match=expression?.exec(text);
   if(!match)return <p style={{whiteSpace:'pre-wrap'}}>{text}</p>;

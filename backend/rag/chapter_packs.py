@@ -107,6 +107,7 @@ def chapter_pack(book, chapter_number, data_dir):
     exercises = chapter.get('exercises', [])
     solved = sum(row.get('solution_status') == 'checked' and bool(row.get('solution')) for row in exercises)
     study_fingerprint = hashlib.sha256(json.dumps({
+        'metadata_schema': 2,
         'pack': key, 'book_version': book.get('version'), 'chapter': chapter,
         'vector_model': MODEL_VERSION, 'indexed': indexed,
     }, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
@@ -122,6 +123,7 @@ def chapter_pack(book, chapter_number, data_dir):
         'chapter_number': chapter_number, 'chapter_title': chapter['title'],
         'version': study_fingerprint, 'sha256': digest(pdf_path), 'md5': digest(pdf_path, 'md5'),
         'source_book_version': book.get('version'),
+        'text_origin': book.get('text_origin', 'native'),
         'bytes': pdf_path.stat().st_size, 'original_pdf_sha256': expected_sha,
         'pdf_page_offset': start - 1, 'chapters': [chapter],
         'offline_index': build_index([chapter]) if indexed else None,

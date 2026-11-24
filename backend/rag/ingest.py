@@ -4,7 +4,7 @@ import json
 import re
 from pathlib import Path
 
-PIPELINE_VERSION = '4'
+PIPELINE_VERSION = '5'
 
 
 def digest(path: Path, algorithm='sha256') -> str:

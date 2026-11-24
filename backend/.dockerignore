@@ -1,6 +1,11 @@
 .env
+.env.*
 .venv
 __pycache__
 .pytest_cache
 data/chroma_db
+data/chapter_packs
+data/books/review
+data/books/solution-drafts
+data/books/*.pages.draft.json
 tests

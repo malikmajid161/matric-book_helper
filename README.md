@@ -8,7 +8,7 @@ Choose a subject → download its verified textbook once → read chapters, sear
 
 Whole-book downloads and separate chapter packs are supported. Each chapter pack contains its original PDF pages, available text, a portable local LSA vector index, and any checked solutions. Packs can be opened offline or deleted independently. PDF page references preserve original book numbering; the reader adjusts chapter-file offsets. Expo OTA checks download compatible updates quietly for the next launch; native changes require a new APK.
 
-Current content coverage: Class 10 Chemistry has native text and transcribed questions, with worked solutions pending. Class 9 Physics/Chemistry and Class 10 Physics use machine OCR for retrieval and original page images for online answers; OCR is not fully reviewed. Maths has 12 chapter boundaries, only two reviewed pages and 17 checked Exercise 1.1 subparts. No whole-book completeness or zero-error claim is made.
+Current content coverage: Class 10 Chemistry has native text, 174 transcribed questions and 6 checked worked solutions. Class 9 Physics/Chemistry and Class 10 Physics use machine OCR for retrieval and original page images for online answers; OCR is not fully reviewed. Maths has 12 chapter boundaries, only two reviewed pages and 17 checked Exercise 1.1 subparts. No whole-book completeness or zero-error claim is made.
 
 Roman Urdu questions are normalized for retrieval; explanations always use simple English. Offline practice quizzes shuffle saved exercise questions and reveal only checked solutions. New AI answers require the backend; offline excerpts and previously saved answers do not.
 
