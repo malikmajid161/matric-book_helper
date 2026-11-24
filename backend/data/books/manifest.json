@@ -1,0 +1,443 @@
+[
+  {
+    "id": "physics",
+    "title": "Physics",
+    "edition": "PECTAA 2026-27 - English medium",
+    "filename": "physics.pdf",
+    "source_url": "https://drive.google.com/file/d/1BqP9RHrXtqCpZZ1soQcyvJ90ACUSAWar/view",
+    "sha256": "47e5654f4fc691741f0afc7dd80148b121601eef11767de7cd3a87255c5a879f",
+    "chapters": [
+      {
+        "number": 10,
+        "title": "Thermal Physics",
+        "start_page": 4,
+        "end_page": 21
+      },
+      {
+        "number": 11,
+        "title": "Transfer of Thermal Energy",
+        "start_page": 22,
+        "end_page": 34
+      },
+      {
+        "number": 12,
+        "title": "Waves",
+        "start_page": 35,
+        "end_page": 48
+      },
+      {
+        "number": 13,
+        "title": "Sound",
+        "start_page": 49,
+        "end_page": 64
+      },
+      {
+        "number": 14,
+        "title": "Light",
+        "start_page": 65,
+        "end_page": 90
+      },
+      {
+        "number": 15,
+        "title": "Electrostatics",
+        "start_page": 91,
+        "end_page": 106
+      },
+      {
+        "number": 16,
+        "title": "Electricity",
+        "start_page": 107,
+        "end_page": 128
+      },
+      {
+        "number": 17,
+        "title": "Electromagnetism",
+        "start_page": 129,
+        "end_page": 140
+      },
+      {
+        "number": 18,
+        "title": "Electromagnetic Induction and Electromagnetic Waves",
+        "start_page": 141,
+        "end_page": 155
+      },
+      {
+        "number": 19,
+        "title": "Electronics",
+        "start_page": 156,
+        "end_page": 168
+      },
+      {
+        "number": 20,
+        "title": "Atomic and Nuclear Physics",
+        "start_page": 169,
+        "end_page": 188
+      },
+      {
+        "number": 21,
+        "title": "Space and Environment",
+        "start_page": 189,
+        "end_page": 200
+      }
+    ],
+    "reader_only": false,
+    "ocr_sha256": "1c54a2716da1a840feb82c801558596194ce7432f6d1e3842b873be315865e6c",
+    "text_origin": "machine_transcribed",
+    "coverage": "OCR search; online answers checked against original page images",
+    "grade": 10
+  },
+  {
+    "id": "chemistry",
+    "title": "Chemistry",
+    "edition": "PECTAA 2026-27 - English medium",
+    "filename": "chemistry.pdf",
+    "source_url": "https://drive.google.com/file/d/142r9HIosiPteAb2BvlcqSxuOTx9KYqSr/view",
+    "sha256": "64fcd73190ad12858ff756a2fcfde6cdf8f108cc0b318d55999554cf4f53aed6",
+    "chapters": [
+      {
+        "number": 14,
+        "title": "States of Matter and Phase Changes",
+        "start_page": 4,
+        "end_page": 18
+      },
+      {
+        "number": 15,
+        "title": "Stoichiometry",
+        "start_page": 19,
+        "end_page": 33
+      },
+      {
+        "number": 16,
+        "title": "Electrochemistry",
+        "start_page": 34,
+        "end_page": 57
+      },
+      {
+        "number": 17,
+        "title": "Reaction Kinetics",
+        "start_page": 58,
+        "end_page": 69
+      },
+      {
+        "number": 18,
+        "title": "Salts",
+        "start_page": 70,
+        "end_page": 76
+      },
+      {
+        "number": 19,
+        "title": "Nitrogen and Sulphur",
+        "start_page": 77,
+        "end_page": 89
+      },
+      {
+        "number": 20,
+        "title": "Water",
+        "start_page": 90,
+        "end_page": 101
+      },
+      {
+        "number": 21,
+        "title": "Organic Chemistry",
+        "start_page": 102,
+        "end_page": 118
+      },
+      {
+        "number": 22,
+        "title": "Hydrocarbons",
+        "start_page": 119,
+        "end_page": 128
+      },
+      {
+        "number": 23,
+        "title": "Monohydroxy Alkanes or Alcohols",
+        "start_page": 129,
+        "end_page": 136
+      },
+      {
+        "number": 24,
+        "title": "Carboxylic Acids",
+        "start_page": 137,
+        "end_page": 144
+      },
+      {
+        "number": 25,
+        "title": "Biochemistry",
+        "start_page": 145,
+        "end_page": 155
+      },
+      {
+        "number": 26,
+        "title": "Polymers",
+        "start_page": 156,
+        "end_page": 164
+      }
+    ],
+    "archive_url": "https://files.kholdo.net/pctb-punjab/class-10/chemistry-10-en.pdf",
+    "grade": 10,
+    "study_sha256": "d0d9df816bd1517d06b79443a5a151ad5a26a5444ce921829e630c302243a994"
+  },
+  {
+    "id": "mathematics",
+    "title": "Mathematics",
+    "edition": "PECTAA 2026-27 - English medium",
+    "filename": "mathematics.pdf",
+    "source_url": "https://drive.google.com/file/d/1MKYcHg2WdNDIjqeD2JFKpcs_79oZ_3fq/view",
+    "sha256": "8ca72023ba062f4a5abcc7d465d8f21f86cae2551790a167e003a9670a3d7e2f",
+    "chapters": [
+      {
+        "number": 1,
+        "title": "Complex Numbers",
+        "start_page": 3,
+        "end_page": 23,
+        "coverage": "partial-reviewed"
+      },
+      {
+        "number": 2,
+        "title": "Quadratic Equations and Inequalities",
+        "start_page": 24,
+        "end_page": 48,
+        "coverage": "pdf-only"
+      },
+      {
+        "number": 3,
+        "title": "Matrices and Determinants",
+        "start_page": 49,
+        "end_page": 82,
+        "coverage": "pdf-only"
+      },
+      {
+        "number": 4,
+        "title": "Functions and Graphs",
+        "start_page": 83,
+        "end_page": 98,
+        "coverage": "pdf-only"
+      },
+      {
+        "number": 5,
+        "title": "Algebraic Fractions",
+        "start_page": 99,
+        "end_page": 112,
+        "coverage": "pdf-only"
+      },
+      {
+        "number": 6,
+        "title": "Vectors in Plane",
+        "start_page": 113,
+        "end_page": 126,
+        "coverage": "pdf-only"
+      },
+      {
+        "number": 7,
+        "title": "Trigonometry",
+        "start_page": 127,
+        "end_page": 144,
+        "coverage": "pdf-only"
+      },
+      {
+        "number": 8,
+        "title": "Chords and Arcs of a Circle",
+        "start_page": 145,
+        "end_page": 156,
+        "coverage": "pdf-only"
+      },
+      {
+        "number": 9,
+        "title": "Tangent and Angles of a Circle",
+        "start_page": 157,
+        "end_page": 169,
+        "coverage": "pdf-only"
+      },
+      {
+        "number": 10,
+        "title": "Practical Geometry of Circles",
+        "start_page": 170,
+        "end_page": 177,
+        "coverage": "pdf-only"
+      },
+      {
+        "number": 11,
+        "title": "Information Handling",
+        "start_page": 178,
+        "end_page": 197,
+        "coverage": "pdf-only"
+      },
+      {
+        "number": 12,
+        "title": "Probability",
+        "start_page": 198,
+        "end_page": 213,
+        "coverage": "pdf-only"
+      }
+    ],
+    "reader_only": false,
+    "reviewed_pages_only": true,
+    "coverage": "partial-reviewed",
+    "coverage_note": "Exercise 1.1 (17 subparts) and PDF pages 4 and 6 checked; remaining solutions and text await review.",
+    "reviewed_pdf_pages": [
+      4,
+      6
+    ],
+    "ocr_sha256": "f99bc2ec7473ff325933b35e6a196ae8cb5245105f401a25bb1e65fc752fc6b4",
+    "study_sha256": "0736661e02afa1b3ead6bdf999ca44cf9c7b36cb87a19ceef31466a1aa73469b",
+    "grade": 10
+  },
+  {
+    "id": "physics9",
+    "title": "Physics · Class 9",
+    "grade": 9,
+    "edition": "PECTAA 2025-26 - English medium (official current listing)",
+    "filename": "physics9.pdf",
+    "source_url": "https://drive.google.com/file/d/1Afzgg1sukw1-qBOj61VnMGs6-b1x82ae/view",
+    "sha256": "a77c9b5fd12e35de2a08390c2b93d10a59fa94fb4603e3349908e75c6b189794",
+    "reader_only": true,
+    "coverage": "Original PDF verified; OCR and exercises awaiting review",
+    "chapters": [
+      {
+        "number": 1,
+        "title": "Physical Quantities and Measurements",
+        "start_page": 5,
+        "end_page": 27
+      },
+      {
+        "number": 2,
+        "title": "Kinematics",
+        "start_page": 28,
+        "end_page": 51
+      },
+      {
+        "number": 3,
+        "title": "Dynamics",
+        "start_page": 52,
+        "end_page": 79
+      },
+      {
+        "number": 4,
+        "title": "Turning Effects of Force",
+        "start_page": 80,
+        "end_page": 104
+      },
+      {
+        "number": 5,
+        "title": "Work, Energy and Power",
+        "start_page": 105,
+        "end_page": 126
+      },
+      {
+        "number": 6,
+        "title": "Mechanical Properties of Matter",
+        "start_page": 127,
+        "end_page": 147
+      },
+      {
+        "number": 7,
+        "title": "Thermal Properties of Matter",
+        "start_page": 148,
+        "end_page": 160
+      },
+      {
+        "number": 8,
+        "title": "Magnetism",
+        "start_page": 161,
+        "end_page": 180
+      },
+      {
+        "number": 9,
+        "title": "Nature of Science",
+        "start_page": 181,
+        "end_page": 193
+      }
+    ]
+  },
+  {
+    "id": "chemistry9",
+    "title": "Chemistry · Class 9",
+    "grade": 9,
+    "edition": "PCTB 2025-26 - English medium (official current listing)",
+    "filename": "chemistry9.pdf",
+    "source_url": "https://drive.google.com/file/d/1OY1Unpm8VkLCGQfbLFrE8wLn3fzXmZpc/view",
+    "sha256": "05e0fcca2e1762cc8d9122546d4ff4a612f18f8f061db1a5c04f17d99315b518",
+    "reader_only": true,
+    "coverage": "Original PDF verified; OCR and exercises awaiting review",
+    "chapters": [
+      {
+        "number": 1,
+        "title": "States of Matter and Phase Changes",
+        "start_page": 5,
+        "end_page": 20
+      },
+      {
+        "number": 2,
+        "title": "Atomic Structure",
+        "start_page": 21,
+        "end_page": 35
+      },
+      {
+        "number": 3,
+        "title": "Chemical Bonding",
+        "start_page": 36,
+        "end_page": 55
+      },
+      {
+        "number": 4,
+        "title": "Stoichiometry",
+        "start_page": 56,
+        "end_page": 70
+      },
+      {
+        "number": 5,
+        "title": "Energetics",
+        "start_page": 71,
+        "end_page": 86
+      },
+      {
+        "number": 6,
+        "title": "Equilibria",
+        "start_page": 87,
+        "end_page": 96
+      },
+      {
+        "number": 7,
+        "title": "Acid Base Chemistry",
+        "start_page": 97,
+        "end_page": 108
+      },
+      {
+        "number": 8,
+        "title": "Periodic Table and Periodicity",
+        "start_page": 109,
+        "end_page": 122
+      },
+      {
+        "number": 9,
+        "title": "Group Properties and Elements",
+        "start_page": 123,
+        "end_page": 132
+      },
+      {
+        "number": 10,
+        "title": "Environmental Chemistry",
+        "start_page": 133,
+        "end_page": 148
+      },
+      {
+        "number": 11,
+        "title": "Hydrocarbons",
+        "start_page": 149,
+        "end_page": 160
+      },
+      {
+        "number": 12,
+        "title": "Empirical Data Collection and Analysis",
+        "start_page": 161,
+        "end_page": 169
+      },
+      {
+        "number": 13,
+        "title": "Laboratory and Practical Skills",
+        "start_page": 170,
+        "end_page": 180
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "PTB Scholar",
+    "slug": "majid-ali-awan",
+    "version": "1.0.0",
+    "runtimeVersion": {
+      "policy": "fingerprint"
+    },
+    "updates": {
+      "enabled": true,
+      "url": "https://u.expo.dev/c7fb7019-d357-45a6-8698-d50abfb188e8",
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
+    },
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "package": "pk.ptbscholar.app",
+      "versionCode": 1
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-sharing",
+      "expo-status-bar",
+      "./plugins/withLocalTesting.js",
+      "expo-sqlite",
+      "@config-plugins/react-native-blob-util",
+      "@config-plugins/react-native-pdf"
+    ],
+    "extra": {
+      "description": "Offline textbooks and grounded study help",
+      "eas": {
+        "projectId": "c7fb7019-d357-45a6-8698-d50abfb188e8"
+      }
+    },
+    "owner": "malikmajids-team"
+  }
+}
